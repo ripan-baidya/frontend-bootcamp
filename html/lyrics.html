@@ -3,12 +3,91 @@
     <head>
         <title>Lyrics</title>
     </head>
+    <style>
+        body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                background-color: hsl(211, 24%, 95%);
+            }
+            .title {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: hsl(211, 24%, 20%);
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+            }
+            .cover {
+                border-radius: 12px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                height: 200px;
+                width: 200px;
+                object-fit: cover;
+            }
+            .cover:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+                transform: scale(1.05);
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+
+            .button-row {
+                display: flex;
+                gap: 8px;
+            }
+
+            .watch-button button {
+                margin-top: 5px;
+                border-radius: 5px;
+                background-color: hsl(211, 63%, 63%);
+                color: white;
+                border: none;
+                padding: 6px 10px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            
+            .watch-button button:hover {
+                background-color: hsl(211, 63%, 53%);
+            }
+            
+            .artist-name {
+                color: rgb(68, 147, 226); 
+                font-weight: bold;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            }
+
+            .more-info-button button {
+                margin-top: 5px;
+                border-radius: 5px;
+                background-color: hsl(120, 63%, 63%);
+                color: white;
+                border: none;
+                padding: 6px 10px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    </style>
     <body>
-        <h1>Daylight</h1>
-        <p style="color: red; "><b>Songs by David.</b></p>
-        <p><a href="https://youtu.be/MoN9ql6Yymw?si=8v4AfpPzy-_46OJL" title="Daylight Video" target="_blank">Daylight Lyrics Video</a></p>
-        <hr>
-        
+        <h1 class="title">Daylight by <span class="artist-name">David Kushner</span></h1>
+        <div>
+           <a href="https://youtu.be/MoN9ql6Yymw?si=8v4AfpPzy-_46OJL" title="Daylight Video" target="_blank">
+               <img src="/images/daylight-cover.png" class="cover" alt="daylight" >
+           </a>
+        </div>
+        <div class="button-row">
+            <div class="watch-button">
+                <button>Watch Video</button>
+            </div>
+            <div class="more-info-button">
+                <button>More Info</button>
+            </div>
+        </div>
+        <br>        
         <pre>
             <b>Lyrics</b><br>
             My love was as cruel as the cities I lived in
