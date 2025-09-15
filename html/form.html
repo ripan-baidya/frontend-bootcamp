@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <h2>Contact Form</h2>
+        <form action="/" method="post" target="_blank" name="contactForm">
+            <!-- text fields -->
+            <!-- The value of 'for' attribute of the <lable> tag should be same as the 'id' attribute of the <input> tag to bind them together -->
+            <!-- For text inputs, the value attribute sets the default text inside the box (optional). If you don’t set it, the box will be empty by default. -->
+            <!-- The 'name' attribute we should use if we want to collect input and want to send it to the server. it's use as a key -->
+            <!-- 
+                * The <fieldset> element is used to group related data in a form.
+                * The <legend> element defines a caption for the <fieldset> element.
+             -->
+            <fieldset>
+                <legend>Username field</legend>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required placeholder="Enter your first name"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" required placeholder="Enter your last name"><br>
+            </fieldset>
+            <!-- radio  -->
+            <!-- Radio buttons let a user select ONE of a limited number of choices. user should use 'name' attribute in <input> -->
+            <!-- For radio buttons and checkboxes, the value attribute is important because it determines what data is sent to the server if that option is selected. -->
+            <!-- name=gender, value=Male so if i select Male then on the server side it will: gender=Male {key, value} -->
+            <label>Choose your Gender:</lable> <br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label> <br>
+
+            <!-- checkbox -->
+            <!-- Checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
+            <!-- name=adult, value=Yes, if select then on the server side adult=Yes {key, value} -->
+            <label>Are you an Adult:</label> <br>
+            <input type="checkbox" id="yes" name="adult" value="Yes">
+            <label for="yes">Yes</label>
+            <input type="checkbox" id="no" name="adult" value="No">
+            <label for="no">No</label> <br>
+            
+            <!-- select elements -->
+            <!-- 
+                * by default, the first item in the drop-down list is selected.
+                * To define a pre-selected option, add the 'selected'attribute to the option:
+                * Use the size attribute to specify the number of visible values:
+            -->
+            <label for="nationality">Select your nationality:</label>
+            <select name="nationality" id="nationality">
+                <option value="" disabled selected>Choose</option>
+                <option value="hindu">Hindu</option>
+                <option value="muslim">Muslim</option>
+                <option value="christian">Christian</option>
+            </select> <br>
+
+            <!-- textarea elements -->
+            <label>Write something about you:</label><br>
+            <textarea name="about" id="about" rows="5" cols="20"></textarea> <br>
+
+            <!-- Submit -->
+            <!-- For submit buttons, the 'value' attribute sets the button’s label. -->
+            <input type="submit" value="Submit">
+
+            <!-- reset -->
+            <input type="reset" value="Reset">
+
+            <!-- button elements -->
+            <!-- always use 'type' attribute to define button, different browsers might use different types of default button element -->
+            <button type="button" onclick="alert('hello')">Click me</button>
+
+            <label>experiment</label>
+            <input type="file">
+        </form>
+</body>
+</html>
