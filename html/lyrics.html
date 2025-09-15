@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Adding a favicon to our webpage -->
+        <link rel="icon" type="image/jpg" href="images/favicon.jpg">
         <title>Lyrics</title>
     </head>
     <style>
@@ -71,6 +77,22 @@
                 cursor: pointer;
                 transition: background-color 0.3s ease;
             }
+
+            .audio-player audio {
+                display: block;
+                margin-top: 10px;
+                border: 1px solid rgb(2, 18, 39);
+                border-radius: 30px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                cursor: pointer;
+            }
+
+            .audio-player audio:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+                transform: scale(1.02);
+                transition: transform 0.3s ease;
+            }
+
     </style>
     <body>
         <h1 class="title">Daylight by <span class="artist-name">David Kushner</span></h1>
@@ -87,71 +109,101 @@
                 <button>More Info</button>
             </div>
         </div>
+        <div class="audio-player">
+            <audio controls>
+                <source src="/audio/David Kushner - Daylight (Official Audio).mp3" type="audio/mpeg">
+                <p>If audio doesn't play, you can <a href="https://open.spotify.com/track/1odExI7RdWc4BT515LTAwj" target="_blank">download it from Spotify</a></p>
+            </audio>
+        </div>
         <br>        
         <pre>
-            <b>Lyrics</b><br>
-            My love was as cruel as the cities I lived in
-            Everyone looked worse in the light
-            There are so many lines that I've crossed, unforgiven
-            I'll tell you the truth, but never, "Goodbye"
-            I don't wanna look at anything else now that I saw you
-            I don't wanna think of anything else now that I thought of you
-            I've been sleepin' so long in a twenty-year dark night
-            And now I see daylight, I only see daylight
-            Luck of the draw only draws the unlucky
-            And so I became the butt of the joke
-            I wounded the good and I trusted the wicked
-            Clearin' the air, I breathed in the smoke
-            Maybe you ran with the wolves and refused to settle down
-            Maybe I've stormed out of every single room in this town
-            Threw out our cloaks and our daggers because it's morning now
-            It's brighter now, now
-            I don't wanna look at anything else now that I saw you
-            (I can never look away)
-            I don't wanna think of anything else now that I thought of you
-            (Things will never be the same)
-            I've been sleepin' so long in a twenty-year dark night
-            (Now I'm wide awake)
-            And now I see daylight (daylight)
-            I only see daylight (daylight)
-            I only see daylight, daylight, daylight, daylight
-            I only see daylight, daylight, daylight, daylight
-            And I can still see it all (in my mind)
-            All of you, all of me (intertwined)
-            I once believed love would be (black and white)
-            But it's golden (golden)
-            And I can still see it all (in my head)
-            Back and forth from New York (sneakin' in your bed)
-            I once believed love would be (burnin' red)
-            But it's golden
-            Like daylight
-            Like daylight
-            Like daylight
-            Daylight
-            I don't wanna look at anything else now that I saw you
-            (I can never look away)
-            And I don't wanna think of anything else now that I thought of you
-            (Things will never be the same)
-            I've been sleepin' so long in a twenty-year dark night
-            (Now I'm wide awake)
-            And now I see daylight (I see daylight)
-            I only see daylight (oh)
-            I only see daylight, daylight, daylight, daylight
-            I only see daylight, daylight, daylight, daylight (ah)
-            I only see daylight, daylight, daylight, daylight (and I can still see it all)
-            (Back and forth from New York)
-            I only see daylight, daylight, daylight, daylight (I once believed love would be burnin' red) (ah)
-            Like daylight
-            It's golden
-            Like daylight
-            You gotta step into the daylight and let it go
-            Just let it go
-            Let it go
-            "I wanna be defined by the things that I love
-            Not the things I hate
-            Not the things I'm afraid of, I'm afraid of
-            The things that haunt me in the middle of the night, I
-            I just think that you are what you love"
+            <b style="color: rgb(68, 147, 226); font-size: 1rem; font-weight: 500;">Lyrics</b><br>
+            Telling myself I won't go there
+
+            Oh, but I know that I won't care
+
+            Tryna wash away all the blood I've spilt
+
+            This lust is a burden that we both share
+
+            Two sinners can't atone from a lone prayer
+
+            Souls tied, intertwined by pride and guilt
+
+            (Ooh) There's darkness in the distance
+
+            From the way that I've been livin'
+
+            (Ooh) But I know I can't resist it
+
+            Oh, I love it and I hate it at the same time
+
+            You and I drink the poison from the same vine
+
+            Oh, I love it and I hate it at the same time
+
+            Hidin' all of our sins from the daylight
+
+            From the daylight, runnin' from thе daylight
+
+            From the daylight, runnin' from the daylight
+
+            Oh, I love it and I hatе it at the same time
+
+            Tellin' myself it's the last time
+
+            Can you spare any mercy that you might find
+
+            If I'm down on my knees again?
+
+            Deep down, way down, Lord, I try
+
+            Try to follow your light, but it's nighttime
+
+            Please don't leave me in the end
+
+            (Ooh)
+
+            There's darkness in the distance
+
+            I'm beggin' for forgiveness
+
+            (Ooh) But I know I might resist it, oh
+
+            Oh, I love it and I hate it at the same time
+
+            You and I drink the poison from the same vine
+
+            Oh, I love it and I hate it at the same time
+
+            Hidin' all of our sins from the daylight
+
+            From the daylight, runnin' from the daylight
+
+            From the daylight, runnin' from the daylight
+
+            Oh, I love it and I hate it at the same time
+
+            Oh, I love it and I hate it at the same time
+
+            You and I drink the poison from the same vine
+
+            Oh, I love it and I hate it at the same time
+
+            Hidin' all of our sins from the daylight
+
+            From the daylight, runnin' from the daylight
+
+            From the daylight, runnin' from the daylight
+
+            Oh, I love it and I hate it at the same time
         </pre>
+
+        <div class="video-player">
+            <video controls>
+                <source src="/video/David Kushner - Daylight (Official Video).mp4" type="video/mp4">
+                <p>If video doesn't play, you can <a href="https://www.youtube.com/watch?v=MoN9ql6Yymw" target="_blank">download it from YouTube</a></p>
+            </video>
+        </div>
     </body>
 </html>
