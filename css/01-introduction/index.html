@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- To apply css on a particular document we use Internal CSS, with <style> tag. -->
+    <!-- Make sure the style tag is inside the <head> tag -->
+    <!--
+    <style>
+        body {
+            background-color: rgb(13, 1, 1);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+    </style>
+    -->
+    
+    <!-- To link an external css file we use <link> tag with some attributes. which is given below -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- There are three types of styling in css, these are: Inline, Internal and External -->
+    <!-- 
+        1. Inline CSS is used to apply a unique style to a single HTML element.
+        2. Internal CSS is used to define a style for a single document.
+        3. External CSS is used to define styles for multiple documents.
+    -->
+        <!-- Inline CSS -->
+        <!-- <h1 style="color: red; font-weight: 500;">This is a heading</h1> -->
+        
+        <!-- Here, we have applied inline css on these elements and the styles are defined above. -->
+        <!--
+        <h1>This is heading</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim doloribus vel nihil illum repellat, voluptatum ratione! Culpa, commodi optio, mollitia excepturi sunt rem repellat id vel saepe veniam beatae!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim doloribus vel nihil illum repellat, voluptatum ratione! Culpa, commodi optio, mollitia excepturi sunt rem repellat id vel saepe veniam beatae!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim doloribus vel nihil illum repellat, voluptatum ratione! Culpa, commodi optio, mollitia excepturi sunt rem repellat id vel saepe veniam beatae!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim doloribus vel nihil illum repellat, voluptatum ratione! Culpa, commodi optio, mollitia excepturi sunt rem repellat id vel saepe veniam beatae!</p>
+        -->
+
+        <!-- Now, We will use External CSS to style this element. -->
+        <!-- Here, we will use selectors, such as: id, class to select a particular element and style it -->
+        <h1 id="my-h1">This is heading</h1>
+
+        <p id="p1" class="even">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim doloribus vel nihil illum repellat, voluptatum ratione! Culpa, commodi optio, mollitia excepturi sunt rem repellat id vel saepe veniam beatae!</p>
+        <p id="p2" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim doloribus vel nihil illum repellat, voluptatum ratione! Culpa, commodi optio, mollitia excepturi sunt rem repellat id vel saepe veniam beatae!</p>
+        <p id="p3" class="even">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim doloribus vel nihil illum repellat, voluptatum ratione! Culpa, commodi optio, mollitia excepturi sunt rem repellat id vel saepe veniam beatae!</p>
+        <p id="p4" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim doloribus vel nihil illum repellat, voluptatum ratione! Culpa, commodi optio, mollitia excepturi sunt rem repellat id vel saepe veniam beatae!</p>
+        
+</body>
+</html>
