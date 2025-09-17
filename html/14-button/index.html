@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn {
+        font-size: 15px;
+        padding: 10px 20px;
+        background-color: lightgreen;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    #btn:hover {
+        background-color: green;
+        scale: 1.1;
+        transition: 0.3s;
+    }
+</style>
+<body>
+    <!-- In this section we will discuss about button in html -->
+    <button id="btn">Click Me</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+            window.alert("Button Clicked");
+        });
+    </script>
+</body>
+</html>
