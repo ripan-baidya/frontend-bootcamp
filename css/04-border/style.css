@@ -1,0 +1,30 @@
+/* 
+
+*/
+h1 {
+    /*
+    border-style: solid;
+    border-width: 2px;
+    border-color: hsl(0, 95%, 52%);
+    */
+    /* 
+    * here whatever we did using the above three properties we could achieve the same with 
+    * single property called border. border - width border-style border-color. so we could
+    * write the above three properties in a single property called border as shown below.  
+    */
+    border: 2px solid hsl(230, 95%, 52%);
+    border-radius: 10px;
+    text-align: center;
+    color: hsl(0, 95%, 52%);
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-top: 1px dashed hsl(120, 81%, 22%);
+    border-right: 1px solid hsl(263, 85%, 33%);
+    border-bottom: 1px double hsl(334, 95%, 52%);
+    border-left: 1px dotted hsl(201, 60%, 52%);
+    border-radius: 5px;
+}
