@@ -1,0 +1,29 @@
+/* 
+* The text-shadow CSS property adds shadows to text. It accepts a comma-separated list of 
+* shadows to be applied to the text and any of its decorations. Each shadow is described 
+* by some combination of X and Y offsets from the element, blur radius, and color.
+*/
+
+/*
+* The box-shadow CSS property adds shadow effects around an element's frame.
+* A box shadow is described by X and Y offsets relative to the element, blur
+* and spread radius, and color.
+*/
+h1 {
+    text-align: center;
+    font-weight: 700;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 2px 3px 3px rgb(15, 210, 228);
+}
+
+blockquote {
+    text-align: left;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #f4ecec;
+    box-shadow:
+    inset 0 -3em 3em rgba(171, 243, 171, 0.3),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
