@@ -1,0 +1,25 @@
+/* 
+* If we have font downloaded in our local, we can use them in our style.css file.
+* If we want to use a local font, we can use the @font-face rule to specify the font file
+* and give it a name using the font-family property.
+* Then we can use that name in our CSS to apply the font to specific elements.
+* In this example, we are using the Open Sans font which is downloaded and stored in the
+* 'fonts' folder.
+*/
+@font-face {
+    src: url('fonts/OpenSans-Regular.ttf');
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    /* some of the commonly used font properties */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    font-weight: 500;
+    font-style: italic;
+    /* font-display: swap; */
+}
