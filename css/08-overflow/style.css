@@ -1,0 +1,7 @@
+#box1 {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed blue;
+    overflow: auto;
+    /* overflow-clip-margin: 10px; */ /* adds 10px margin around the clipped area */
+}
