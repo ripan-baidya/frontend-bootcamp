@@ -1,0 +1,28 @@
+ /*
+* The float CSS property places an element on the left or right side of its container,
+* allowing text and inline elements to wrap around it. 
+* left: The element must float on the left side of its containing block.
+* right: The element must float on the right side of its containing block.
+*/
+section {
+    box-sizing: border-box;
+    border: 1px solid red;
+    width: 100%;
+    float: left;
+}
+
+div {
+    margin: 5px;
+    width: 50px;
+    height: 150px;
+}
+
+.left {
+    float: left;
+    background-color: aqua;
+}
+
+.right {
+    float: right;
+    background-color: yellow;
+}
