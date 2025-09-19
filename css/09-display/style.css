@@ -1,0 +1,33 @@
+/* display: 
+* The display CSS property sets whether an element is treated as a block or inline box and the 
+* layout used for its children, such as flow layout, grid or flex. 
+*
+* types of display values: block, inline, inline-block, flex, grid, none etc.
+*
+* 1. block - The element is displayed as a block element (like <div>). It starts on a new line, and takes up the full width available. 
+* 2. inline - The element is displayed as an inline element (like <span>). It does not start on a new line and only takes up as much
+*   width as necessary.
+* 3. inline-block - The element is formatted as an inline element, but it can have width and height values.
+* 4. flex - The element behaves like a block element and lays out its content according to the flexbox model.
+* 5. none - The element is not displayed at all (it has no effect on layout); all child elements also have display set to none. 
+* 6. grid - The element behaves like a block element and lays out its content according to the grid model.
+* visibility: The visibility CSS property shows or hides an element without changing the layout of a document.
+    - hidden - The element is hidden (not visible).
+    - visible - The element is visible. hidden - The element is hidden (not visible).
+    - collapse - For table rows, columns, column groups, and row groups, the element is removed from the display, and the space it occupied is removed
+*/
+div {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    display: flex;
+    visibility: visible;
+}
+
+span {
+    background-color: gold;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
