@@ -1,0 +1,54 @@
+h2::first-letter {
+    font-size: 2em;
+    font-weight: 500;
+    color: red;
+}
+
+p::first-line {
+    font-style: italic;
+    font-weight: 500;
+    color: blue;
+}
+
+p::selection {
+    background-color: rgb(246, 148, 130);
+    color: white;
+    font-weight: bold;
+}
+
+/* .fruits li::before {
+    content: "🍎";
+    margin-right: 10px;
+    color: rgb(1, 1, 1);
+    font-weight: 500;
+    font-size: 15px;
+} */
+
+ul li::marker {
+    content: "➡️ ";
+    margin-right: 10px;
+}
+
+#apple::after {
+    content: "🍎";
+    margin-left: 10px;
+    color: rgb(1, 1, 1);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#banana::after {
+    content: "🍌";
+    margin-right: 10px;
+    color: rgb(1, 1, 1);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#orange::after {
+    content: "🍊";
+    margin-right: 10px;
+    color: rgb(1, 1, 1);
+    font-weight: 500;
+    font-size: 15px;
+}
