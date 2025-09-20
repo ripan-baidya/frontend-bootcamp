@@ -1,0 +1,22 @@
+.buttons {
+    text-align: center;
+}
+
+.buttons a{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #1b1a1a;
+}
+
+.buttons a#active {
+    background-color: #6ee57e;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.buttons a:hover:not(#active) {
+    background-color: #babebb;
+    font-weight: bold;
+    border-radius: 50%;
+}
