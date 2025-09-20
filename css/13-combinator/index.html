@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        Here, we will learn about Combinator in css 
+        Combinator: Combinators combine selectors to target elements based on their DOM relationships.
+        There are vaious types of combinators in css, these are:
+            1. Descendant Combinator: denote by space/ ` `
+            2. Child Combinator: denote by `>`
+            3. Adjacent Sibling Combinator: denote by `+`
+            4. General Sibling Combinator: denote by `~`
+    -->
+    <!-- 
+    * Descendant Combinator 
+    * Denote by space/ ` `
+    * Selects elements that are inside (at any level) another element.
+    * Syntax: ancestor descendant
+    -->
+    <!--
+    <div class="box">
+        <p>I am Inside .box #1</p>
+        <p>I am Inside .box #2</p>
+    </div>
+    <p>I am outside .box #3</p>
+    -->
+    
+    <!-- 
+    * Child Combinator
+    * Denote by `>`
+    * Selects elements that are direct children of another element.
+    * Syntax: parent > child
+    -->
+    <ul>
+        <li>Unordered Item</li>
+        <li>
+            Unordered Item
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- 
+    * Adjacent Sibling Combinator 
+    * Denote by `+`
+    * Selects elements that are immediately followed by another element.
+    * Syntax: element + element
+    -->
+    <h1>Main title</h1>
+    <p>this comes right after the main title</p>
+    <p>this does't comes right after the main title</p>
+
+    <!-- 
+    * General Sibling Combinator 
+    * Denote by `~`
+    * Selects elements that are preceded by another element.
+    * Syntax: element ~ element
+    -->
+</body>
+</html>

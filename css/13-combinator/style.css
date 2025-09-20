@@ -1,0 +1,34 @@
+/*
+<div class="box">
+    <p>I am Inside .box #1</p>
+    <p>I am Inside .box #2</p>
+</div>
+<p>I am outside .box #3</p>
+
+.box {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.box p {
+    color: red;
+    font-weight: bold;
+}
+
+* Here, I am Inside .box #1
+* Here, I am Inside .box #2 will be red and bold and will be inside box
+* I am outside .box #3 will be ignored
+*/
+
+ul > li {
+    color: red; /* inherited */
+    border-top: 1px solid red; /* not inherited */
+}
+
+/*
+ * When we use '+`, this will select sibling right after the element.
+ * When we use '~', this will select all the siblings after the element. 
+ */
+h1 ~ p {
+    color: red;
+}
