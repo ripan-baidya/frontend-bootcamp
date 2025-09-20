@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+#box {
+    border: 1px solid black;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+}
+
+#inner {
+    border: 1px solid black;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+/* 
+ * position: relative
+ * We could use top, right, bottom, left to position the element relative to its current position.
+ * top: 20px; -> means from the top give me 20px space
+ * left: 50px; -> means from the left give me 50px space.
+ * We could mention the -ve values also. which means we could move the element to the opposite direction.
+ */
