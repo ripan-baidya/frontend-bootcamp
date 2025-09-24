@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Notes</title>
+  <style>
+    .container {
+      border: 2px solid red;
+      display: flex; 
+      height: 90vh; 
+
+      /* 
+      ===================
+      FLEXBOX ALL ABOUT
+      ===================
+      
+      1) justify-content → aligns items along the MAIN axis
+         (row → horizontal, column → vertical)
+         values: flex-start | flex-end | center | space-between | space-around | space-evenly
+      */
+      justify-content: center;
+
+      /* 
+      2) align-items → aligns items along the CROSS axis (single line only)
+         values: stretch (default) | flex-start | flex-end | center | baseline
+      */
+      /* align-items: center; */
+
+      /* 
+      3) align-content → aligns MULTIPLE flex lines along the CROSS axis
+         (only works if flex-wrap: wrap is used and items go into multiple rows/columns)
+         values: flex-start | flex-end | center | space-between | space-around | stretch
+      */
+      /* align-content: center; */
+
+      /*
+      4) flex-direction → defines MAIN axis
+         - row (default): main axis = horizontal, cross axis = vertical
+         - column: main axis = vertical, cross axis = horizontal
+      */
+      flex-direction: row;
+
+      /*
+      5) flex-wrap → controls whether items stay on one line or wrap
+         - nowrap (default): all items in one line
+         - wrap: items wrap to next line when no space
+         - wrap-reverse: wraps in reverse order
+      */
+      /* flex-wrap: wrap; */
+
+      /*
+      6) gap → spacing between flex items
+         - gap: applies to both row & column
+         - row-gap: vertical spacing
+         - column-gap: horizontal spacing
+         - syntax: gap: <row-gap> <column-gap>
+      */
+      gap: 0px 15px;
+    }
+
+    .item {
+      height: 100px;
+      width: 100px;
+      background-color: rgb(121, 187, 220);
+      border: 2px solid black;
+
+      /*
+      ====================
+      INDIVIDUAL ITEM NOTES
+      ====================
+      
+      order → controls the order of items
+              default = 0
+              smaller value → comes earlier
+              larger value → comes later
+      */
+      /* order: 0; (default) */
+    }
+
+    .item1 {
+      order: 1;
+
+      /*
+      flex-grow → defines how much the item grows relative to others
+      - default = 0 (no growth)
+      - flex-grow: 2 means it will take twice the extra space compared to an item with flex-grow: 1
+      */
+      flex-grow: 2;
+
+      /*
+      align-self → overrides align-items for a single item
+      values: auto | flex-start | flex-end | center | baseline | stretch
+      */
+      /* align-self: center; */
+    }
+    
+    .item2 {
+      order: 2;
+      flex-grow: 2;
+    }
+    
+    .item3 {
+      order: 3;
+
+      /*
+      flex-shrink → defines how much the item shrinks when space is tight
+      - default = 1 (shrinks equally)
+      - 0 = don’t shrink
+      */
+      flex-shrink: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </main>
+</body>
+</html>
