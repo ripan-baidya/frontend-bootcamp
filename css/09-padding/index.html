@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padding</title>
+    <style>
+        /** 
+         * single value: padding to all four sides (top, right, bottom, left)
+         * padding: value; [all four sides]
+         * 
+         * double value: padding to top & bottom, padding to left & right
+         * padding: value1 value2; [value1=top&bottom(vertical), value2=left&right(horizontal)]
+         *
+         * four value: padding to top, right, bottom, left
+         * padding: value1 value2 value3 value4; [top right bottom left (clockwise)]
+         */
+        #box1 {
+            border: 1px solid black;
+            margin-bottom: 10px; /* Ignore if you are not familiar with margin for now */
+        }
+
+        #box2 {
+            border: 1px solid black;
+            /* padding: 20px; */ /* single value */
+            /* padding: 10px 40px; */ /* double value */
+            padding: 10px 20px 30px 40px; /* four value */ /* top right bottom left (clockwise) */
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Padding in CSS -->
+    <!-- 
+    Padding is the space between an element’s content and its border. It provides internal spacing inside the element,
+    helping improve readability and the overall design of a web page. 
+    -->
+    <div id="box1">Box1 (without Padding)</div>
+    <div id="box2">Box2 (with Padding)</div>
+  </body>
+</html>

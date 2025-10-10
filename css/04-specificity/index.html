@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity CSS</title>
+    <style>
+      * {
+        color: blue;
+      }
+      .p-class {
+        color: cyan;
+      }
+      #p-id {
+        color: green;
+      }
+      p {
+        color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Specificity in CSS
+    It might happens that multiple css rule target the same element, at that time question arrise which rule will be applied 
+    on that element. The rule with higher specificy will be applied.
+    -->
+
+    <!-- priority: inline(1000)> id(100) > class selectors/ attibute selectors/ pseudo-class(10) > element(1) > universal(0) -->
+    <!-- color: red; will be applied (inline) -->
+    <p id="p-id" class="p-class" style="color: red">Inline Rule Applied</p>
+
+    <!-- color: green; will be applied (id)-->
+    <p id="p-id" class="p-class">Id Rule Applied</p>
+
+    <!-- color: cyan; will be applied (class) -->
+    <p class="p-class">Class Rule Applied</p>
+
+    <!-- color: royalblue; will be applied (element) -->
+    <p>Element Rule Applied</p>
+
+    <!-- color: blue; will be applied (universal) and no other rule has been defined for this -->
+    <h3>Universal Rule Applied</h3>
+  </body>
+</html>

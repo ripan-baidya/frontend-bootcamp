@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      /** 
+       * position: relative
+       * We could use top, right, bottom, left to position the element relative to its current position.
+       * top: 20px; -> means from the top give me 20px space
+       * left: 50px; -> means from the left give me 50px space.
+       * We could mention the -ve values also. which means we could move the element to the opposite direction.
+       */
+      body {
+        margin: 0;
+      }
+      #box {
+        border: 1px solid black;
+        background-color: aqua;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 70px;
+        left: 20px;
+      }
+
+      #inner {
+        border: 1px solid black;
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Position in CSS -->
+    <!-- 
+    The position CSS property sets how an element is positioned in a document.
+    values:
+    
+    1. static → Default positioning (normal document flow).
+    2. relative → Positioned relative to its normal position.
+    3. absolute → Positioned relative to the nearest positioned ancestor.
+    4. fixed → Positioned relative to the viewport (stays fixed while scrolling).
+    5. sticky → Acts like relative until a scroll threshold is reached, then “sticks” like fixed.
+    -->
+
+    <div id="box">
+      <div id="inner"></div>
+    </div>
+  </body>
+</html>

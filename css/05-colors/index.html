@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color</title>
+    <style>
+      /* hexadecimal color */
+      p {
+        color: #ff0000; /* red */
+        color: #00ff00; /* green */
+        color: #0000ff; /* blue */
+        color: #000000; /* black */
+        color: #ffffff; /* white */
+        color: #834747; /* custom color */
+      }
+
+      /* rgb color */
+      p {
+        color: rgb(255, 0, 0); /* red */
+        color: rgb(0, 255, 0); /* green */
+        color: rgb(0, 0, 255); /* blue */
+        color: rgb(0, 0, 0); /* black */
+        color: rgb(255, 255, 255); /* white */
+        color: rgb(83, 71, 71); /* custom color */
+      }
+
+      /* rgba color */
+      p {
+        color: rgba(255, 0, 0, 0.5); /* red */
+        color: rgba(0, 255, 0, 0.8); /* green */
+        color: rgba(0, 0, 255, 0.2); /* blue */
+        color: rgba(83, 71, 71, 1); /* custom color */
+      }
+
+      /* hsl color */
+      p {
+        color: hsl(0, 100%, 50%); /* red */
+        color: hsl(120, 100%, 50%); /* green */
+        color: hsl(240, 100%, 50%); /* blue */
+        color: hsl(0, 0%, 0%); /* black */
+        color: hsl(0, 0%, 100%); /* white */
+        color: hsl(0, 0%, 50%); /* custom color */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Color in CSS -->
+    <!-- In CSS we can define color in different ways, some of them are mentioned below -->
+
+    <!-- ***** Hexadecimal ***** -->
+    <!-- 
+        Hexadecimal: consist of hash(#) symbol followed by 6 characters. arranged into the set of three pairs(RR, GG, BB)
+        Each Pair defines the intensity of the color.
+        Range from 00 (no intensity) to FF (maximum intensity)
+        color: #RRGGBB
+    -->
+
+    <!-- ***** rgb() ***** -->
+    <!-- 
+        RGB: Red-Green-Blue
+        Range from 0 to 255
+        color: rgb(red, green, blue);
+    -->
+
+    <!-- ***** rgba() ***** -->
+    <!-- 
+        RGBA: Red-Green-Blue-Alpha
+        Range from 0 to 255, A defines the optacity and it has the range between 0 to 1
+        color: rgba(red, green, blue, alpha);
+    -->
+
+    <!-- ***** hsl() ***** -->
+    <!-- HSL stands for hue, saturation, and lightness. This is another way to set colour properties.
+      h - hue: reprsents type of color, it measured in degree, range from 0 to 360, [0-black, 120-green, 360-blue]
+      s - saturation: represents intensity or purity of color, it measured in percentage, range from 0% to 100%
+      l - lightness: represents brightness of color, it measured in percentage, range from 0% to 100%
+      color: hsl(hue, saturation, lightness);
+    -->
+    
+    <p>hello everyone</p>
+  </body>
+</html>

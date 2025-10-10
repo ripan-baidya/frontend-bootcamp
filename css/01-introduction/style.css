@@ -1,34 +1,7 @@
-body {
-    background-color: black;
-    display: inline;
+#title {
+  color: red;
 }
 
-/* To select an 'id' we use '#' */
-#my-h1 {
-    color: white;
-}
-
-/* #p1 {
-    color: tomato;
-}
-
-#p2 {
-    color: orange;
-}
-
-#p3 {
-    color: yellow;
-}
-
-#p4 {
-    color: green;
-} */
-
-/* To select a 'class' we use '.' */
-.even {
-    color: tomato;
-}
-
-.odd {
-    color: orange;
+.paragraph {
+  color: cyan;
 }

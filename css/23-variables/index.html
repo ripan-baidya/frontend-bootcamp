@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+    <style>
+        /* defining global variable */
+        :root {
+            --div-bg-color: cyan;
+            --title-color: red
+        }
+        div {
+            border: 1px solid red;
+            height: 150px;
+            width: 150px;
+            padding: 10px;
+            text-align: center;
+            /* we have used variable */
+            background-color: var(--div-bg-color);
+        }
+
+        #title {
+            /* using variable */
+            color: var(--title-color);
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Variables in CSS -->
+    <!-- 
+    To define variable in css we use --variable-name: value;
+    In our style we can define variables in :root (global variable available accorss the page)
+    to access the variable we use var(--variable-name)
+    -->
+    <div>😁</div>
+    <p id="title">I am a Software Engineer</p>
+  </body>
+</html>

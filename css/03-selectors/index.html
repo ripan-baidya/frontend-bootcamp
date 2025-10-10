@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS selectors</title>
+  <style>
+    /* element selector */
+    div{
+      background-color: rebeccapurple;
+    }
+
+    /* class selector */
+    .red {
+      background-color: red;
+    }
+
+    /* id selector */
+    #green {
+      background-color: green;
+    }
+
+    /* universal selector */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* pseudo selector */
+    div:hover {
+      background-color: gold;
+    }
+
+    /* child selector */
+    #green > p {
+      color: red;
+    }
+
+    /* descendant selector */
+    div p {
+      color: aqua;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Selectors in html -->
+  <div> div 1
+    <p>i am paragraph</p>
+  </div>
+
+  <div class="red">class selector</div>
+
+  <div id="green">
+    <p>i am paragraph inside div</p>
+  </div>
+</body>
+</html>

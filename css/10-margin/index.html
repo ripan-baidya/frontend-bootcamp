@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin</title>
+    <style>
+      #p1 {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      #p2 {
+        border: 1px solid red;
+        padding: 10px;
+
+        /* single value: margin to all four sides */
+        /* margin: 20px; */
+
+        /* double value: margin to top & bottom(vertical), margin to left & right(horizontal) */
+        /* margin: 10px 20px; */
+
+        /* four value: margin to top, right, bottom, left */
+        /* to apply margin to all four sides, we go clockwise -> top, right, bottom, left */
+        margin: 10px 20px 15px 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Margin in CSS -->
+    <!-- 
+    The margin is the space outside an HTML element. It provides external spacing and helps to separate two
+    or more elements from each other.
+      
+    Both padding and margins are essential in CSS for managing spacing. While padding adds space inside the
+    element (between content and border), margins add space outside the element (between elements themselves).
+    Used together, they help make a web page look clean, balanced, and visually appealing.
+    -->
+
+    <p id="p1">I am Ripan Baidya (Without Margin)</p>
+    <p id="p2">I am Preparing for Amazon SDE1 Role (With Margin)</p>
+  </body>
+</html>

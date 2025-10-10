@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      /**
+        * The float CSS property places an element on the left or right side of its container,
+        * allowing text and inline elements to wrap around it. 
+        *
+        * left: The element must float on the left side of its containing block.
+        * right: The element must float on the right side of its containing block.
+        */
+      section {
+        box-sizing: border-box;
+        border: 1px solid red;
+        width: 100%;
+        float: left;
+      }
+
+      div {
+        margin: 5px;
+        width: 50px;
+        height: 150px;
+      }
+
+      .left {
+        float: left;
+        background-color: aqua;
+      }
+
+      .right {
+        float: right;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Float in CSS -->
+    <!-- 
+    The float property in CSS is used to position an element to the left or right of its container, allowing other content
+    (like text or inline elements) to wrap around it. This property is commonly used with images, sidebars, or layouts where
+    text should flow beside a block element.
+    -->
+    <section>
+      <div class="left">box1</div>
+      <div class="left">box2</div>
+      <div class="right">box3</div>
+      <div class="right">box4</div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ex
+        fugit minima error, commodi architecto corrupti aliquam, animi pariatur
+        neque cum quaerat molestiae dolorem eligendi vero ipsum inventore et
+        vitae.
+      </p>
+    </section>
+  </body>
+</html>

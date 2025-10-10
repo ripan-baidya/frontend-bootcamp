@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More about CSS</title>
+  <style>
+    /* .container::before {
+      content: "before";
+      background-color: red
+    }
+     .container::after {
+      content: "after";
+      background-color: red
+    } */
+    .container .item{
+      height: 50px;
+      width: 50px;
+      margin: 5px;
+      border: 1px solid black;
+    }
+
+    /* .item:first-child {
+      background-color: red;
+    } */
+
+    /* .item:nth-child(odd) {
+      background-color: blueviolet;
+    } */
+
+    /* .item:last-child {
+      background-color: black;
+    } */
+
+    /* input {
+      height: 50px;
+      width: 300px;
+    }
+    input::placeholder {
+      color: rgb(49, 48, 48);
+      font-size: 2.5em;
+    } */
+     
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+
+    <input type="text" placeholder="enter your name">
+  </div>
+</body>
+</html>
