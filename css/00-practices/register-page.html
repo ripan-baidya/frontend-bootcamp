@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+  </head>
+  `
+  <div
+    class="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-100 via-white to-indigo-200"
+  >
+    <main class="w-full max-w-lg rounded-2xl bg-white p-10 shadow-xl">
+      <!-- Header -->
+      <header class="mb-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">
+          Welcome to <span class="text-indigo-600">AstroBrains!</span>
+        </h2>
+        <p class="mt-1 text-sm text-gray-500">
+          Join us and explore the cosmos of knowledge.
+        </p>
+      </header>
+
+      <!-- Form -->
+      <form action="#" method="post" class="space-y-5">
+        <!-- First and Last Name -->
+        <div
+          class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4"
+        >
+          <input
+            type="text"
+            required
+            placeholder="First name"
+            class="flex-1 rounded-md border border-gray-300 p-3 transition focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          />
+          <input
+            type="text"
+            required
+            placeholder="Last name"
+            class="flex-1 rounded-md border border-gray-300 p-3 transition focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label
+            class="mb-1 block text-sm font-medium text-gray-700"
+            for="email"
+            >Email</label
+          >
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="Enter email"
+            class="w-full rounded-md border border-gray-300 p-3 transition focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          />
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label
+            class="mb-1 block text-sm font-medium text-gray-700"
+            for="password"
+            >Password</label
+          >
+          <input
+            id="password"
+            type="password"
+            required
+            placeholder="Enter password"
+            class="w-full rounded-md border border-gray-300 p-3 transition focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          />
+        </div>
+
+        <!-- Register Button -->
+        <button
+          type="submit"
+          class="w-full cursor-pointer rounded-md bg-indigo-600 py-3 text-sm font-medium text-white transition-all hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500"
+        >
+          Register
+        </button>
+      </form>
+
+      <!-- Divider -->
+      <div class="my-6 flex items-center">
+        <hr class="flex-grow border-gray-300" />
+        <span class="mx-4 text-sm text-gray-400">or sign up with</span>
+        <hr class="flex-grow border-gray-300" />
+      </div>
+
+      <!-- Social Login -->
+      <div class="flex justify-center gap-4">
+        <!-- Google -->
+        <button
+          class="flex items-center gap-2 rounded-md border border-gray-300 px-4 py-2 transition hover:bg-gray-100"
+        >
+          <img
+            src="https://www.svgrepo.com/show/355037/google.svg"
+            alt="Google Logo"
+            class="h-5 w-5"
+          />
+          <span class="text-sm text-gray-700">Google</span>
+        </button>
+
+        <!-- GitHub -->
+        <button
+          class="flex items-center gap-2 rounded-md border border-gray-300 px-4 py-2 transition hover:bg-gray-100"
+        >
+          <img
+            src="https://www.svgrepo.com/show/217753/github.svg"
+            alt="GitHub Logo"
+            class="h-5 w-5"
+          />
+          <span class="text-sm text-gray-700">GitHub</span>
+        </button>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-6 text-center text-sm text-gray-500">
+        Already have an account?
+        <a href="#" class="text-indigo-600 hover:underline">Log in</a>
+      </footer>
+    </main>
+  </div>
+</html>
